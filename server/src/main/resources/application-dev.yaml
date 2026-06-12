@@ -1,0 +1,28 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: server
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Qurio
+    username: postgres
+    password: admin@123
+
+#    hikari:
+#      pool-name: HikariCP
+#      maximum-pool-size: 5
+#      connection-timeout: 10000
+#      idle-timeout: 600000
+#      max-lifetime: 1800000
+#      validation-timeout: 1800000
+#      leak-detection-threshold: 0
+#      initialization-fail-timeout: -1
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
